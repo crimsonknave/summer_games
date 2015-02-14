@@ -1,0 +1,23 @@
+.campaign-public-layout {
+  font-family: 'Walter Turncoat'; }
+  .campaign-public-layout .main-content {
+    /*color: $dark-purple;*/ }
+    .campaign-public-layout .main-content .title {
+      border-bottom: 1px solid #fddc7f; }
+    .campaign-public-layout .main-content .tags-list, .campaign-public-layout .main-content .header-icon a {
+      color: #fddc7f; }
+  .campaign-public-layout .wiki-page .post-section.post-main {
+    background-color: #fdfdda; }
+    .campaign-public-layout .wiki-page .post-section.post-main table {
+      background-color: #fdfdda;
+      border-color: #fddc7f; }
+      .campaign-public-layout .wiki-page .post-section.post-main table tr:nth-of-type(even) {
+        background-color: #fdf4da; }
+
+a, a.tag-link:visited, a.character_link:visited, a.wiki-content-link:visited, a.wiki-page-link:visited, a:visited {
+  font-family: 'Rock Salt';
+  /*color: $dark-purple;*/
+  color: #264d00; }
+
+.main-content a.create-wiki-page-link {
+  color: #cc84fa; }

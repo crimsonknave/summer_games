@@ -1,0 +1,59 @@
+$yellow: #e1de0b;
+$mute-yellow: #7d7c3b;
+$dark-yellow: #555400;
+$light-yellow: #fdfc7f;
+$washed-yellow: #fdfdda;
+
+$green: #76ca0a;
+$mute-green: #527035; // Hover
+$dark-green: #264d00;
+$light-green: #bcfc7e;
+$washed-green: #eafcd9;
+
+$gold: #e1a90b; // Main
+$mute-gold: #7d6c3b;
+$dark-gold: #553f00; // Main Dark
+$light-gold: #fddc7f;  
+$washed-gold: #fdf4da;
+
+$purple: #620f96;
+$mute-purple: #442a54; // Active
+$dark-purple: #230139;
+$light-purple: #cc84fa;
+$washed-purple: #edd9fa;
+
+.campaign-public-layout {
+  .main-content {
+    /*color: $dark-purple;*/ // This gets main stuff, but not headers or tables and so on
+    .title {
+      border-bottom: 1px solid $light-gold;
+    }
+    .tags-list, .header-icon a {
+      color: $light-gold;
+    }
+  }
+  font-family: 'Walter Turncoat';
+  .wiki-page {
+    .post-section.post-main {
+      background-color: $washed-yellow;
+      table {
+        background-color: $washed-yellow;
+        border-color: $light-gold;
+        tr:nth-of-type(even) {
+          background-color: $washed-gold;
+        }
+      }
+    }
+  }
+}
+
+a, a.tag-link:visited, a.character_link:visited, a.wiki-content-link:visited, a.wiki-page-link:visited, a:visited {
+  font-family: 'Rock Salt';
+  /*color: $dark-purple;*/
+  color: $dark-green;
+}
+.main-content {
+  a.create-wiki-page-link {
+    color: $light-purple;
+  }
+}
