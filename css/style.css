@@ -1,23 +1,140 @@
 .campaign-public-layout {
   font-family: 'Walter Turncoat'; }
+  .campaign-public-layout .campaign-banner-image {
+    box-shadow: 5px 10px 15px black; }
+    .campaign-public-layout .campaign-banner-image:before {
+      content: url(http://i.minus.com/ib15ixRfsZj5mz.png);
+      position: relative;
+      top: 4px;
+      left: 4%; }
+  .campaign-public-layout #banner-container {
+    transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    margin-bottom: 20px;
+    padding-top: 0px; }
+    .campaign-public-layout #banner-container:before {
+      content: url(http://i.minus.com/ib15ixRfsZj5mz.png);
+      position: relative;
+      top: 40px;
+      left: 90%; }
+  .campaign-public-layout .large-3.sidebar {
+    background: none;
+    padding-left: 5px;
+    padding-top: 15px; }
+    .campaign-public-layout .large-3.sidebar .adventure-log-index-filter {
+      transform: rotate(1deg);
+      -ms-transform: rotate(1deg);
+      -webkit-transform: rotate(1deg);
+      box-shadow: 5px 10px 15px black;
+      padding-top: 0px;
+      padding-right: 20px;
+      padding-left: 10px;
+      margin-right: 15px;
+      background: url(http://fc02.deviantart.net/fs21/i/2007/268/c/3/Texture__Recycled_Paper_by_milokey.jpg); }
+      .campaign-public-layout .large-3.sidebar .adventure-log-index-filter:before {
+        content: url(http://i.minus.com/ib15ixRfsZj5mz.png);
+        position: relative;
+        top: 3px;
+        left: 45%; }
+    .campaign-public-layout .large-3.sidebar .columns .filter-container {
+      background: none; }
+      .campaign-public-layout .large-3.sidebar .columns .filter-container .filter-header {
+        background: none;
+        border-bottom: 2px solid #335100;
+        padding-bottom: 2px;
+        color: #335100; }
+    .campaign-public-layout .large-3.sidebar .columns li.active {
+      background: none; }
+    .campaign-public-layout .large-3.sidebar .columns li {
+      padding-bottom: 5px; }
+  .campaign-public-layout .adventure-log-new-container {
+    background: none;
+    margin-bottom: -15px; }
+  .campaign-public-layout .adventure-log-post-container.teaser:nth-of-type(odd) {
+    transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg); }
+    .campaign-public-layout .adventure-log-post-container.teaser:nth-of-type(odd) .post-column:before {
+      content: url(http://i.minus.com/ib15ixRfsZj5mz.png);
+      position: relative;
+      top: -17px;
+      left: 60%; }
+  .campaign-public-layout .adventure-log-post-container.teaser:nth-of-type(even) {
+    transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg); }
+    .campaign-public-layout .adventure-log-post-container.teaser:nth-of-type(even) .post-column:before {
+      content: url(http://i.minus.com/ib15ixRfsZj5mz.png);
+      position: relative;
+      top: -17px;
+      left: 30%; }
+  .campaign-public-layout .adventure-log-post-container {
+    background: none;
+    padding: 0px; }
+    .campaign-public-layout .adventure-log-post-container .adventure-log-post {
+      margin-top: 10px;
+      margin-bottom: 40px;
+      margin-left: 0px;
+      margin-right: 0px;
+      height: 233px;
+      box-shadow: 5px 10px 15px black;
+      background-image: url(http://i.minus.com/iUwiso5R9j13n.jpg); }
+      .campaign-public-layout .adventure-log-post-container .adventure-log-post .post-column {
+        width: 100%; }
+        .campaign-public-layout .adventure-log-post-container .adventure-log-post .post-column .subtitle {
+          padding-top: 0px;
+          padding-bottom: 7px;
+          margin-top: -5px; }
+        .campaign-public-layout .adventure-log-post-container .adventure-log-post .post-column .title {
+          border: 0px;
+          font-size: 20px;
+          margin-top: -3px; }
+        .campaign-public-layout .adventure-log-post-container .adventure-log-post .post-column .post-content {
+          height: 190px; }
+          .campaign-public-layout .adventure-log-post-container .adventure-log-post .post-column .post-content p {
+            line-height: 21px;
+            padding-bottom: 3px;
+            padding-top: 0px; }
+        .campaign-public-layout .adventure-log-post-container .adventure-log-post .post-column .post-view-link {
+          display: none; }
+        .campaign-public-layout .adventure-log-post-container .adventure-log-post .post-column .post-header {
+          margin-top: -57px; }
+          .campaign-public-layout .adventure-log-post-container .adventure-log-post .post-column .post-header .tags {
+            margin-top: -5px;
+            margin-bottom: -4px; }
+        .campaign-public-layout .adventure-log-post-container .adventure-log-post .post-column .header-icon {
+          margin-top: -50px; }
+        .campaign-public-layout .adventure-log-post-container .adventure-log-post .post-column .overflow-fade-out {
+          display: none; }
+      .campaign-public-layout .adventure-log-post-container .adventure-log-post .post-date {
+        /*things*/ }
+  .campaign-public-layout #campaign-summary-row .large-12.columns .row {
+    display: none; }
+  .campaign-public-layout #campaign-summary-row .highlight-container {
+    display: none; }
   .campaign-public-layout .main-content {
     /*color: $dark-purple;*/ }
     .campaign-public-layout .main-content .title {
-      border-bottom: 1px solid #fddc7f; }
+      border-bottom: 1px solid #fedf67; }
     .campaign-public-layout .main-content .tags-list, .campaign-public-layout .main-content .header-icon a {
-      color: #fddc7f; }
+      color: #fedf67; }
   .campaign-public-layout .wiki-page .post-section.post-main {
-    background-color: #fdfdda; }
+    background: url(http://fc02.deviantart.net/fs21/i/2007/268/c/3/Texture__Recycled_Paper_by_milokey.jpg); }
     .campaign-public-layout .wiki-page .post-section.post-main table {
-      background-color: #fdfdda;
-      border-color: #fddc7f; }
+      background: none;
+      border-color: #fedf67; }
       .campaign-public-layout .wiki-page .post-section.post-main table tr:nth-of-type(even) {
-        background-color: #fdf4da; }
+        background-color: rgba(254, 223, 103, 0.3); }
 
 a, a.tag-link:visited, a.character_link:visited, a.wiki-content-link:visited, a.wiki-page-link:visited, a:visited {
   font-family: 'Rock Salt';
   /*color: $dark-purple;*/
-  color: #264d00; }
+  color: #335100; }
 
 .main-content a.create-wiki-page-link {
-  color: #cc84fa; }
+  color: #ba68ef; }
+
+/*advenure log*/
+.campaign-public-layout.adventure-log-index #content {
+  background-image: url(https://fc00.deviantart.net/fs15/f/2007/059/1/9/Corkboard_Wood_Cork_Composite_by_Enchantedgal_Stock.jpg); }

@@ -1,28 +1,186 @@
-$yellow: #e1de0b;
-$mute-yellow: #7d7c3b;
-$dark-yellow: #555400;
-$light-yellow: #fdfc7f;
-$washed-yellow: #fdfdda;
+// Colors: http://colorschemedesigner.com/csd-3.5/#1R61Y..vfWrP7
+$yellow: #f9f600;
+$mute-yellow: #85843e;
+$dark-yellow: #575600;
+$light-yellow: #fefc67;
+$washed-yellow: #fefdba;
 
-$green: #76ca0a;
-$mute-green: #527035; // Hover
-$dark-green: #264d00;
-$light-green: #bcfc7e;
-$washed-green: #eafcd9;
+$green: #91e700;
+$mute-green: #637c39; // Hover
+$dark-green: #335100;
+$light-green: #c4fa66;
+$washed-green: #e2fab8;
 
-$gold: #e1a90b; // Main
-$mute-gold: #7d6c3b;
-$dark-gold: #553f00; // Main Dark
-$light-gold: #fddc7f;  
-$washed-gold: #fdf4da;
+$gold: #f9c500; // Main
+$mute-gold: #85763e;
+$dark-gold: #574500; // Main Dark
+$light-gold: #fedf67;  
+$washed-gold: #fef0ba;
 
-$purple: #620f96;
-$mute-purple: #442a54; // Active
-$dark-purple: #230139;
-$light-purple: #cc84fa;
-$washed-purple: #edd9fa;
+$purple: #6908a7;
+$mute-purple: #482c59; // Active
+$dark-purple: #24003a;
+$light-purple: #ba68ef;
+$washed-purple: #d7b2ef;
+
+$white-paper: url(http://fc06.deviantart.net/fs11/i/2006/220/d/2/Grungy_paper_v_6___or_sumtin___by_bashcorpo.jpg);
+$tan-paper: url(http://fc03.deviantart.net/fs7/i/2005/258/c/4/Paper_texture_v5_by_bashcorpo.jpg);
+$grey-paper: url(http://fc03.deviantart.net/fs70/f/2014/207/3/b/grungy_paper_texture_v_18_by_bashcorpo-d7sdyb3.jpg);
+$recycled-paper: url(http://fc02.deviantart.net/fs21/i/2007/268/c/3/Texture__Recycled_Paper_by_milokey.jpg);
+$sticky-tab: url(http://i.minus.com/in7fa5jpjqpD2.png);
+
+@mixin cork_board {
+  background-image: url(https://fc00.deviantart.net/fs15/f/2007/059/1/9/Corkboard_Wood_Cork_Composite_by_Enchantedgal_Stock.jpg);
+}
+
+@mixin rotate($degrees) {
+  transform: rotate($degrees);
+  -ms-transform: rotate($degrees);
+  -webkit-transform: rotate($degrees);
+}
+
+@mixin pin($top: 0px, $left: 0px) {
+  &:before {
+    content: url(http://i.minus.com/ib15ixRfsZj5mz.png);
+    position: relative;
+    top: $top;
+    left: $left;
+  }
+}
+
+@mixin adventure_log {
+  .large-3.sidebar {
+    background: none;
+    padding-left: 5px;
+    padding-top: 15px;
+    .adventure-log-index-filter {
+      @include rotate(1deg);
+      box-shadow: 5px 10px 15px black;
+      padding-top: 0px;
+      padding-right: 20px;
+      padding-left: 10px;
+      margin-right: 15px;
+      background: $recycled-paper;
+      @include pin(3px, 45%);
+    }
+    .columns {
+      .filter-container {
+        background: none;
+        .filter-header {
+          background: none;
+          border-bottom: 2px solid $dark-green;
+          padding-bottom: 2px;
+          color: $dark-green;
+        }
+      }
+      li.active {
+        background: none;
+      }
+      li {
+        padding-bottom: 5px;
+      }
+    }
+  }
+  .adventure-log-new-container {
+    background: none;
+    margin-bottom: -15px;
+  }
+  .adventure-log-post-container.teaser:nth-of-type(odd) {
+    @include rotate(-2deg);
+    .post-column {
+      @include pin(-17px, 60%);
+    }
+  }
+  .adventure-log-post-container.teaser:nth-of-type(even) {
+    @include rotate(2deg);
+    .post-column {
+      @include pin(-17px, 30%);
+    }
+  }
+  .adventure-log-post-container {
+    background: none;
+    padding: 0px;
+    .adventure-log-post {
+      margin-top: 10px;
+      margin-bottom: 40px;
+      margin-left: 0px;
+      margin-right: 0px;
+      height: 233px;
+      box-shadow: 5px 10px 15px black;
+      background-image: url(http://i.minus.com/iUwiso5R9j13n.jpg);
+      .post-column {
+        .subtitle {
+          padding-top: 0px;
+          padding-bottom: 7px;
+          margin-top: -5px;
+        }
+        .title {
+          border: 0px;
+          font-size: 20px;
+          margin-top: -3px;
+        }
+        .post-content {
+          height: 190px;
+          p {
+            line-height: 21px;
+            padding-bottom: 3px;
+            padding-top: 0px;
+          }
+        }
+        .post-view-link {
+          display: none;
+        }
+        width: 100%;
+        .post-header {
+          margin-top: -57px;
+          .tags {
+            margin-top: -5px;
+            margin-bottom: -4px;
+          }
+        }
+        .header-icon {
+          margin-top: -50px;
+        }
+        .overflow-fade-out {
+          display: none;
+        }
+      }
+      .post-date {
+        /*things*/
+      }
+    }
+  }
+}
+
+@mixin pin_banner {
+  .campaign-banner-image {
+    box-shadow: 5px 10px 15px black;
+    @include pin(4px, 4%);
+  }
+  #banner-container {
+    @include rotate(2deg);
+    @include pin(40px, 90%);
+    margin-bottom: 20px;
+    padding-top: 0px;
+  }
+}
+@mixin hide_dragon {
+  #campaign-summary-row {
+    .large-12.columns {
+      .row {
+        display: none;
+      }
+    }
+    .highlight-container {
+      display: none
+    }
+  }
+}
 
 .campaign-public-layout {
+  @include pin_banner;
+  @include adventure_log;
+  @include hide_dragon;
   .main-content {
     /*color: $dark-purple;*/ // This gets main stuff, but not headers or tables and so on
     .title {
@@ -35,12 +193,12 @@ $washed-purple: #edd9fa;
   font-family: 'Walter Turncoat';
   .wiki-page {
     .post-section.post-main {
-      background-color: $washed-yellow;
+      background: $recycled-paper;
       table {
-        background-color: $washed-yellow;
+        background: none;
         border-color: $light-gold;
         tr:nth-of-type(even) {
-          background-color: $washed-gold;
+          background-color: rgba($light-gold, 0.3);
         }
       }
     }
@@ -55,5 +213,12 @@ a, a.tag-link:visited, a.character_link:visited, a.wiki-content-link:visited, a.
 .main-content {
   a.create-wiki-page-link {
     color: $light-purple;
+  }
+}
+
+/*advenure log*/
+.campaign-public-layout.adventure-log-index {
+  #content {
+    @include cork_board;
   }
 }
